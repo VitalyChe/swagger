@@ -40,7 +40,7 @@ app.service('api', ['$http', 'appStates', 'Upload', '$q',
         data: data
       }).then(function (res) {
         if (res.failed) return res.data.message;
-        key = res.data.auth_token;
+        key = res.data.auth_token.auth_token;
         appStates.authorizeUser();
       });
     };
