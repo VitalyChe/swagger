@@ -1,0 +1,15 @@
+{
+  "type": "application",
+  "name": "swagger",
+  "module": "NO.Swagger",
+  "username": "NO",
+  "ngVersion": "~1.4.0",
+  "ngModules": [
+    "resource",
+    "route"
+  ],
+  "license": "MIT",
+  "htmlPreprocessor": "none",
+  "jsPreprocessor": "none",
+  "cssPreprocessor": "none"
+}

@@ -1,0 +1,63 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed">
+        <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="#"> Swagger API </a>
+    </div>
+
+    <div class="collapse navbar-collapse">
+      <form class="pull-right" ng-hide="user.auth">
+        <button type="button" class="btn btn-default navbar-btn btn-info" ng-click="login()">
+          Login
+        </button>
+
+        <button type="button" class="btn btn-default navbar-btn" ng-click="signUp()">
+          Sign up
+        </button>
+      </form>
+
+      <form class="pull-right" ng-show="user.auth">
+        <label>{{username}}</label>
+
+        <button type="button" class="btn btn-info navbar-btn" ng-click="uploadImage()">
+          Upload image
+        </button>
+
+        <button type="button" class="btn btn-warning navbar-btn" ng-click="profile()">
+          Profile
+        </button>
+
+        <button type="button" class="btn btn-default navbar-btn" ng-click="logout()">
+          Logout
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid"
+     style="margin-left: 15px;margin-right: 16px;"
+     ng-show="gallery.length">
+  <div class="row">
+    <legend>Gallery</legend>
+    <div class="col-sm-4 col-md-3"
+         ng-repeat="image in gallery">
+      <div class="thumbnail">
+        <img ng-src="{{image.url}}">
+
+        <div class="caption">
+          <a href
+             ng-click="removeImage(image)"
+             class="btn btn-default">
+            Remove
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

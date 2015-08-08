@@ -1,0 +1,27 @@
+{
+  "name": "swagger",
+  "version": "0.1.0",
+  "description": "Yet another amazing AngularJS app!",
+  "keywords": [
+    "angular"
+  ],
+  "homepage": "https://github.com/NO/swagger",
+  "bugs": "https://github.com/NO/swagger/issues",
+  "author": {
+    "name": "lamat",
+    "email": "univeroom@gmail.com",
+    "url": "https://github.com/NO"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NO/swagger.git"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "git://github.com/gulpjs/gulp.git#4.0",
+    "ng-factory": "^1.0",
+    "undertaker-app-tasks": "^0.2.6",
+    "factory-angular-channels": "^0.7.1"
+  }
+}

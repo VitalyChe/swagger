@@ -1,0 +1,32 @@
+{
+  "name": "swagger",
+  "version": "0.1.0",
+  "description": "Yet another amazing AngularJS app!",
+  "keywords": [
+    "angular"
+  ],
+  "homepage": "https://github.com/NO/swagger",
+  "bugs": "https://github.com/NO/swagger/issues",
+  "author": {
+    "name": "lamat",
+    "email": "univeroom@gmail.com",
+    "url": "https://github.com/NO"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NO/swagger.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3",
+    "ui-router": "^0.2",
+    "angular-resource": "~1.4.0",
+    "angular-route": "~1.4.0",
+    "angular": "~1.4.0",
+    "ng-file-upload": "~6.0.4"
+  }
+}
